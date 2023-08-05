@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EzIT - Découvrir EzIT 🧑‍🍳</title>
+	<link rel="stylesheet" href="../assets/css/en_savoir_plus.css">
+	<link rel="shortcut icon" type="image/png" href="../assets/icons/ezit.png">
+	<meta name="description" content="EzIT est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="../">
+					<img class="imgtitle" src="../assets/icons/ezit.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="../">🏠 Home</a>
+				<a href="../tous_les_articles/">📰 Tous les articles</a>
+				<a href="../toutes_les_fiches/">📄 Toutes les fiches</a>
+				<a class="on-mobile" href="../telecharger">⬇️ Télécharger</a>
+				<a href="../en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">
+			<div class="hero-buttons">
+				<img style="width: 15vh;" src="../assets/icons/ezit.png" >
+			</div>
+			<h2 class="subtitle">
+				Les rédactions d'IT pour tous
+			</h2>
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="github" href="#commencer">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Découvrir</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="pagebody">
+
+		<div id="commencer" class="hero-text" style="padding: 10vh 0;">
+			<h1>Qu'est ce que EzIT?</h1>
+			<p>EzIT est un site d'articles d'informatique et de technologie en général développé par <a target="_blank" style="color: steelblue;" href="https://kevinjmt.github.io/">KJ</a>
+				dans le but d'informer les passionnés, les novices ou les amateurs sur l'actualité, mais également en proposant des tutoriels et fiches d'aide.</p>
+		</div>
+
+		
+		<div class="hero-block" style="background-color: rgb(242, 242, 242); border-radius: 15px;">
+
+			<div class="hero-items">
+				<img src="../assets/imgs/articles_hero.jpg" class="hero-img2">
+			</div>
+			<div class="hero-text">
+				<h1>La force de EzIT</h1>
+				<p class="text-hero2">La force de EzIT est d'exposer au plus grand nombre des actualités, reviews, tutos et fiches et ce
+					en plus, d'être accessible à tous, sans compte, gratuitement, de manière libre et transparente! 
+					Tu n'y crois pas? <a href="https://github.com/kevinjmt/EzIT">Vérifie par toi-même! 😉</a></p>
+			</div>
+
+		</div>
+
+
+		<div id="commencer" class="hero-text" style="padding: 10vh 0;">
+			<h1>🛡️ La politique EzIT 🛡️</h1>
+			<p><b>Vos données sont privées, nous devons en aucun cas y toucher!</b></p>
+			<p>Le site est hébergé sur GitHub sans aucune indexation en ligne, introuvable sur les moteurs de recherche 
+				et aucun cookie de tracking ou de performances!</p>
+			<p>Nous, les cookies on préfère les manger devant son ordi! 🍪</p>
+		</div>
+
+		
+		<div class="hero-block" style="padding-top: 5vh; background-color: rgb(81, 154, 250); border-radius: 15px;">
+
+			<div class="hero-text">
+				<div class="hero-text">
+					<h1>Une appli qui change la vie! 📱</h1>
+					<p>EzIT est disponible sur toutes les plateformes, IOS et Android!</p>
+				</div>	
+				<div class="hero-buttons" style="padding-bottom: 10%;">
+					<div class="hero-buttons-cols">
+						<a class="github" href="../telecharger/">
+							<div class="download-github-div">
+								<img style="height: 40px; margin-right: 10%;" src="../assets/icons/download-solid.svg">
+								<h2 class="github-text">Télécharger</h2>
+							</div>
+						</a>
+					</div>
+				</div>			
+			</div>	
+
+			<div class="hero-items">
+				<img src="../assets/imgs/en_savoir_plus_hero3.png" class="hero-img3">
+			</div>
+		</div>
+
+		<div id="commencer" class="hero-text" style="padding-top: 10vh;">
+			<h1>Commencer à lire EzIT</h1>
+			<p>Utilise EzIT dès maintenant! </p>
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="github" href="../tous_les_articles/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Lire les articles</h2>
+						</div>
+					</a>
+				</div>
+			</div>	
+			<p>Clique sur le bouton ci-dessus pour accéder à tous les articles!</p>
+		</div>
+
+	</div>
+
+
+	
+	<footer class="footer">
+		<a href="../" style="padding-top: 5vh;">
+			<img class="imgtitle" src="../assets/icons/ezit.png" >
+		</a>
+        <p style=" padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/" style="color: lightsteelblue;">KJ</a></p>
+		<div class="footerbox">
+			<div class="footercol">
+				<p>📄 Pages</p>
+				<a href="../">🏠 Home</a>
+				<a href="../toutes_les_recettes/">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="../telecharger">⬇️ Télécharger</a>
+				<a href="./">📰 En savoir plus</a>
+			</div>
+			<div class="footercol">
+				<p>🔗 Liens</p>
+				<a href="https://kevinjmt.github.io/">👤 KJ</a>
+				<a href="https://github.com/kevinjmt/EzIT">🐈‍⬛ GitHub</a>
+				<a href="../partager/">🔗 Partager EzIT</a>
+			</div>
+		</div>
+		
+        <p style=" padding: 20px 0;">©️ Copyright EzIT 2023</p>
+	</footer>
+</body>
+
+</html>

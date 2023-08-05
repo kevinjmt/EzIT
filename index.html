@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EzIT - Home</title>
+	<link rel="stylesheet" href="./assets/css/home.css">
+	<link rel="shortcut icon" type="image/png" href="./assets/icons/ezit.png">
+	<meta name="description" content="EzIT est un site de recettes de cuisine simples, rapides et gourmandes pour les étudiants mais pas que!">
+
+</head>
+
+<body>
+	
+	<div class="hero-img">
+		<nav>
+			<div></div>
+			<div class="jkuisinebrand">
+				<a href="./">
+					<img class="imgtitle" src="assets/icons/ezit.png" >
+				</a>
+			</div>
+			<div class="menutitles">
+				<a href="./">🏠 Home</a>
+				<a href="./tous_les_articles/">📰 Tous les articles</a>
+				<a href="./toutes_les_fiches/">📄 Toutes les fiches</a>
+				<a class="on-mobile" href="./telecharger">⬇️ Télécharger</a>
+				<a href="./en_savoir_plus">En savoir plus</a>
+			</div>
+			<div class="iloveburgers" onclick="eatoneburger()">
+				<div class="ham">
+					<div class="bur">
+						<span class="ger q"></span>
+						<span class="ger w"></span>
+						<span class="ger e"></span>
+					</div>
+				</div>
+				<script>
+					document.querySelector(".ham").addEventListener("click", function(){
+						document.querySelector(".q").classList.toggle("a")
+						document.querySelector(".w").classList.toggle("b")
+						document.querySelector(".e").classList.toggle("c")
+					})
+					function eatoneburger(){
+						document.querySelector(".menutitles").classList.toggle("show");
+					}
+				</script>
+			</div>
+		</nav>
+		<div class="hero-text">
+			<div class="hero-buttons">
+				<img style="height: 20vh;" src="assets/icons/ezit.png" >
+			</div>
+			<h3 class="subtitle" style="color:lightsteelblue;">
+				Les rédactions d'IT pour tous
+			</h3>
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="download-cv" href="./tous_les_articles/">
+						<div class="download-cv-div cv-shadow">
+							<img style="height: 40px; margin-right: 10%; display: none;" src="./assets/icons/angles-right-solid.svg">
+							<h2 class="cv-text">Tous les articles</h2>
+						</div>
+					</a>
+					<a class="github on-mobile" href="./telecharger/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="./assets/icons/download-solid.svg">
+							<h2 class="github-text">Télécharger</h2>
+						</div>
+					</a>
+					<a class="github on-pc" href="./partager/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="./assets/icons/share-nodes-solid.svg">
+							<h2 class="github-text">Partager EzIT</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+
+	<div class="pagebody">
+
+		<div id="commencer" class="hero-text"  style="padding-bottom: 10vh;">
+			<h1>📬 Les derniers articles! 📰</h1>
+			<p>Aucun article pour l'instant... 👀</p>
+			
+			<div style="display: none;">
+				<div class="receipt-list" id="receipt-list">
+					<a class="receipt-link" href="./toutes_les_recettes/0010_Poisson_a_la_sauce_tomate/">
+						<div class="receipt">
+							<img class="receipt-image" src="../assets/receipt_images/poisson_sauce_tomate.jpg" alt="">
+							<div class="receipt-details">
+								<h2>0010 - Poisson a la sauce tomate</h2>
+								<div class="receipt-infos">
+									<p class="bubble" style="width: 100px; height: 30px; background-color: lightsteelblue;">PLAT</p>
+									<p>15-25min</p>
+									<h3>⭐⭐      </h3>
+									<h3>🪙🪙🪙    </h3>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="receipt-link" href="./toutes_les_recettes/0009_Burger_Gastronomique/">
+						<div class="receipt">
+							<img class="receipt-image" src="../assets/receipt_images/burger.jpg" alt="">
+							<div class="receipt-details">
+								<h2>0009 - Burger Gastronomique</h2>
+								<div class="receipt-infos">
+									<p class="bubble" style="width: 100px; height: 30px; background-color: lightsteelblue;">PLAT</p>
+									<p>20-30min</p>
+									<h3>⭐⭐⭐⭐  </h3>
+									<h3>🪙🪙🪙🪙  </h3>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="receipt-link" href="./toutes_les_recettes/0008_Croque_Monsieur_poele/">
+						<div class="receipt">
+							<img class="receipt-image" src="../assets/receipt_images/croque_monsieur.jpg" alt="">
+							<div class="receipt-details">
+								<h2>0008 - Croque Monsieur poele</h2>
+								<div class="receipt-infos">
+									<p class="bubble" style="width: 100px; height: 30px; background-color: lightsteelblue;">PLAT</p>
+									<p>25-40min</p>
+									<h3>⭐⭐      </h3>
+									<h3>🪙🪙🪙    </h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="github" href="./tous_les_articles/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Voir tout</h2>
+						</div>
+					</a>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="hero-block" style="padding-top: 5vh; background-color: rgb(81, 154, 250); border-radius: 15px;">
+
+			<div class="hero-text">
+				<div class="hero-text">
+					<h1>Une appli qui change la vie! 📱</h1>
+					<p>EzIT est disponible sur toutes les plateformes, IOS et Android!</p>
+				</div>	
+				<div class="hero-buttons" style="padding-bottom: 10%;">
+					<div class="hero-buttons-cols">
+						<a class="github" href="./telecharger/">
+							<div class="download-github-div">
+								<img style="height: 40px; margin-right: 10%;" src="./assets/icons/download-solid.svg">
+								<h2 class="github-text">Télécharger</h2>
+							</div>
+						</a>
+					</div>
+				</div>			
+			</div>	
+
+			<div class="hero-items">
+				<img src="./assets/imgs/en_savoir_plus_hero3.png" class="hero-img3">
+			</div>
+		</div>
+
+		<div id="commencer" class="hero-text"  style="padding: 10vh 0;">
+			<h1>📬 Les dernières fiches! 📄</h1>
+			<p>Aucune fiche pour l'instant... 👀</p>
+			
+			<div style="display: none;">
+				<div class="receipt-list" id="receipt-list">
+					<a class="receipt-link" href="./toutes_les_recettes/0010_Poisson_a_la_sauce_tomate/">
+						<div class="receipt">
+							<img class="receipt-image" src="../assets/receipt_images/poisson_sauce_tomate.jpg" alt="">
+							<div class="receipt-details">
+								<h2>0010 - Poisson a la sauce tomate</h2>
+								<div class="receipt-infos">
+									<p class="bubble" style="width: 100px; height: 30px; background-color: lightsteelblue;">PLAT</p>
+									<p>15-25min</p>
+									<h3>⭐⭐      </h3>
+									<h3>🪙🪙🪙    </h3>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="receipt-link" href="./toutes_les_recettes/0009_Burger_Gastronomique/">
+						<div class="receipt">
+							<img class="receipt-image" src="../assets/receipt_images/burger.jpg" alt="">
+							<div class="receipt-details">
+								<h2>0009 - Burger Gastronomique</h2>
+								<div class="receipt-infos">
+									<p class="bubble" style="width: 100px; height: 30px; background-color: lightsteelblue;">PLAT</p>
+									<p>20-30min</p>
+									<h3>⭐⭐⭐⭐  </h3>
+									<h3>🪙🪙🪙🪙  </h3>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a class="receipt-link" href="./toutes_les_recettes/0008_Croque_Monsieur_poele/">
+						<div class="receipt">
+							<img class="receipt-image" src="../assets/receipt_images/croque_monsieur.jpg" alt="">
+							<div class="receipt-details">
+								<h2>0008 - Croque Monsieur poele</h2>
+								<div class="receipt-infos">
+									<p class="bubble" style="width: 100px; height: 30px; background-color: lightsteelblue;">PLAT</p>
+									<p>25-40min</p>
+									<h3>⭐⭐      </h3>
+									<h3>🪙🪙🪙    </h3>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			
+			<div class="hero-buttons">
+				<div class="hero-buttons-cols">
+					<a class="github" href="./toutes_les_fiches/">
+						<div class="download-github-div">
+							<img style="height: 40px; margin-right: 10%;" src="../assets/icons/angles-right-solid.svg">
+							<h2 class="github-text">Voir tout</h2>
+						</div>
+					</a>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+		<a href="./" style="padding-top: 5vh;">
+			<img class="imgtitle" src="assets/icons/ezit.png" >
+		</a>
+        <p style=" padding-top: 20px;">Made with ❤️ by <a target="_blank" href="https://kevinjmt.github.io/" style="color: lightsteelblue;">KJ</a></p>
+		<div class="footerbox">
+			<div class="footercol">
+				<p>📄 Pages</p>
+				<a href="./">🏠 Home</a>
+				<a href="./toutes_les_recettes">🍲 Toutes les recettes</a>
+				<a class="on-mobile" href="./telecharger">⬇️ Télécharger</a>
+				<a href="./en_savoir_plus">📰 En savoir plus</a>
+			</div>
+			<div class="footercol">
+				<p>🔗 Liens</p>
+				<a href="https://kevinjmt.github.io/">👤 KJ</a>
+				<a href="https://github.com/kevinjmt/EzIT">🐈‍⬛ GitHub</a>
+				<a href="./partager/">🔗 Partager EzIT</a>
+			</div>
+		</div>
+		
+        <p style=" padding: 20px 0;">©️ Copyright EzIT 2023</p>
+	</footer>
+</body>
+
+</html>
